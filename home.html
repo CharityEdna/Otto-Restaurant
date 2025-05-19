@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Otto Restaurant</title>
+  <title>Otto Restaurant & Lounge</title>
   <link rel="icon" type="image/x-icon" href="/HomeImages/ChatGPT Image May 16, 2025, 12_08_50 PM.png">
   <link rel="stylesheet" href="home.css" />
   <link rel="stylesheet" href="navbar.css" />
@@ -12,7 +12,7 @@
 </head>
 <body>
 
-
+  
     <!-- NAVIGATION BAR -->
 <nav class="navbar">
     <ul class="nav-links">
@@ -53,6 +53,84 @@
 
 
 
+<!--  WELCOME SECTION -->
+  <section class="welcome-section">
+  <div class="welcome-content">
+    <div class="text-box">
+      <h4>WELCOME TO OTTO RESTAURANT & LOUNGE</h4>
+      <h1>Experience Culinary Excellence</h1>
+      <p>
+        At Otto, we go beyond just meals — we offer an unforgettable dining experience and events. 
+        Located in the heart of Kampala, our rooftop lounge delivers stunning views and rich tastes. 
+        Enjoy curated dishes, crafted cocktails, and warm hospitality that lingers long after the meal.
+      </p>
+      <a href="gallery.html" class="discover-btn">DISCOVER MORE</a>
+    </div>
+    <div class="image-box">
+      <img src="gallery/1.jpg" alt="Plating">
+    </div>
+  </div>
+</section>
+
+
+<!-- JavaScript to make the image slide in when it enters the viewport. -->
+<script>
+  const boxes = document.querySelectorAll('.image-box');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, {
+    threshold: 0.1 // Trigger when 10% visible
+  });
+
+  boxes.forEach(box => observer.observe(box));
+</script>
+
+
+
+
+
+<!-- Online Reservation/ Booking form -->
+ <div class="reservation-section">
+  <div class="overlay">
+    <h2>BOOK A TABLE</h2>
+    <form class="reservation-form">
+      <label for="name">Your Name (required)</label>
+      <input type="text" id="name" placeholder="Your Name" required />
+
+      <label for="people">Number of People</label>
+      <select id="people" required>
+        <option value="" disabled selected>Select number of people</option>
+        <option>1 Person</option>
+        <option>2 People</option>
+        <option>3 People</option>
+        <option>4 People</option>
+        <option>5 People</option>
+        <option>6 People</option>
+        <option>7 People</option>
+        <option>8 People</option>
+        <option>9 People</option>
+        <option>10-15 People</option>
+        <option>20-25 People</option>
+        <option value="">none</option>
+      </select>
+
+      <label for="date">Booking Date</label>
+      <input type="date" id="date" required />
+
+     <label for="time">Booking Time</label>
+<input type="time" id="time" placeholder="HH:MM" required>
+
+
+
+      <button type="submit">BOOK NOW</button>
+    </form>
+  </div>
+</div>
 
 
 </body>

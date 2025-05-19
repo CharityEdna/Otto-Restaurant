@@ -29,7 +29,8 @@
 html, body {
   height: 100%;
   font-family: 'Segoe UI', sans-serif;
-  overflow: hidden;
+  overflow-y: auto;
+  
 }
 
 /* Container for background image slideshow */
@@ -65,3 +66,172 @@ html, body {
   5%, 12.5%  { opacity: 1; }
   15%, 100%  { opacity: 0; }
 }
+
+
+
+/* WELCOME SECTION STYLES */
+.welcome-section {
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.welcome-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-box {
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+.text-box h4 {
+    color: gold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.text-box h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.text-box p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.discover-btn {
+    background-color: #7b1e1e;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.discover-btn:hover {
+    background-color: #a32929;
+}
+
+.image-box {
+    flex: 1 1 45%;
+    padding: 20px;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+  
+
+
+/* CSS to make the image slide in with a smooth animation, */
+.image-box {
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+/* When in view, apply this class */
+.image-box.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+
+/* ONLINE RESERVATION/ BOOKING FORM */
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.reservation-section {
+  background-image: url("HomeImages/restaurant.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+  max-width: 500px;
+  width: 100%;
+}
+
+.reservation-form label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.reservation-form input,
+.reservation-form select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.reservation-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: gold;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.reservation-form button:hover {
+  background-color: red;
+  color: white;
+}
+
+.reservation-form input[type="time"] {
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+input[type="time"] {
+  pointer-events: auto;
+  z-index: 1;
+}
+
