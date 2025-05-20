@@ -163,7 +163,6 @@ html, body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
-
 .reservation-section {
   background-image: url("HomeImages/restaurant.jpg");
   background-size: cover;
@@ -174,7 +173,6 @@ html, body {
   align-items: center;
   justify-content: center;
 }
-
 .overlay {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 40px;
@@ -204,7 +202,7 @@ html, body {
 .reservation-form button {
   margin-top: 20px;
   padding: 12px;
-  background-color: gold;
+   background-color: gold;
   color: black;
   border: none;
   font-weight: bold;
@@ -214,8 +212,8 @@ html, body {
 }
 
 .reservation-form button:hover {
-  background-color: red;
-  color: white;
+  background-color: rgb(185, 162, 27);
+  color: black;
 }
 
 .reservation-form input[type="time"] {
@@ -234,4 +232,5 @@ input[type="time"] {
   pointer-events: auto;
   z-index: 1;
 }
+
 
