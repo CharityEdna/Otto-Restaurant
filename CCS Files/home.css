@@ -19,7 +19,6 @@
   text-shadow: 1px 1px 3px #000;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +36,8 @@ html, body {
 .slideshow-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100vh; 
+  overflow: hidden;
 }
 
 /* All slides share this base styling */
@@ -47,24 +47,24 @@ html, body {
   height: 100%;
   background-size: cover;
   background-position: center;
-  opacity: 1;
-  animation: fade 40s infinite;
+  opacity: 0;
+  animation: fade 40s infinite; /* Total duration = 8 slides x 5s */
 }
 
 /* Updating with your real image paths */
-.slide1 { background-image: url('HomeImages/breakfast.jpg'); animation-delay: 0s; }
-.slide2 { background-image: url('HomeImages/pizza.jpg'); animation-delay: 5s; }
-.slide3 { background-image: url('HomeImages/people\ dining.jpg'); animation-delay: 10s; }
-.slide4 { background-image: url('HomeImages/restaurant\ inside.jpg'); animation-delay: 15s; }
-.slide5 { background-image: url('HomeImages/vegetables.jpg'); animation-delay: 20s; }
-.slide6 { background-image: url('HomeImages/bar\ drink.jpg'); animation-delay: 25s; }
-.slide7 { background-image: url('HomeImages/restaurant.jpg.crdownload'); animation-delay: 30s; }
-.slide8 { background-image: url('HomeImages/pool.jpg.crdownload'); animation-delay: 35s; }
+.slide1 { background-image: url("/HomeImages/breakfast.jpg"); animation-delay: 0s; }
+.slide2 { background-image: url("/HomeImages/pizza.jpg"); animation-delay: 5s; }
+.slide3 { background-image: url("/HomeImages/people\ dining.jpg"); animation-delay: 10s; }
+.slide4 { background-image: url("/HomeImages/restaurant.jpg"); animation-delay: 15s; }
+.slide5 { background-image: url("HomeImages/vegetables.jpg"); animation-delay: 20s; }
+.slide6 { background-image: url("/HomeImages/juice\ in\ a\ glass.jpg"); animation-delay: 25s; }
+.slide7 { background-image: url("/HomeImages/bar\ drink.jpg"); animation-delay: 30s; }
+.slide8 { background-image: url("/gallery/10.jpg"); animation-delay: 35s; }
 
 @keyframes fade {
-  0%, 100%   { opacity: 0; }
-  5%, 12.5%  { opacity: 1; }
-  15%, 100%  { opacity: 0; }
+  0%, 12.49%   { opacity: 0; }
+  12.5%, 24.99%  { opacity: 1; }
+  25%, 100%   { opacity: 0; }
 }
 
 
@@ -143,7 +143,7 @@ html, body {
 .image-box {
   transform: translateX(-100px);
   opacity: 0;
-  transition: all 0.8s ease-out;
+  transition: all 1.3s ease-out;
 }
 .image-box img {
   width: 100%;
@@ -164,7 +164,7 @@ html, body {
   font-family: Arial, sans-serif;
 }
 .reservation-section {
-  background-image: url("HomeImages/restaurant.jpg");
+  background-image: url("/HomeImages/restaurant.jpg");
   background-size: cover;
   background-position: center;
   padding: 80px 20px;
@@ -302,11 +302,5 @@ input[type="time"] {
   width: 100%;
   border-radius: 10px;
   object-fit: cover;
-  
-}
-.visit-imgs {
-
-  
- 
   
 }
