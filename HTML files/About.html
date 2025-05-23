@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/CCS Files/About.css" />
   <link rel="stylesheet" href="/CCS Files/navbar.css" />
     <link rel="stylesheet" href="/CCS Files/footer.css" />
+    <link rel="stylesheet" href="/CCS Files/reservation.css" />
 
 
 <script src="https://code.jquery.com/jquery-3.7.1.js" 
@@ -17,6 +18,8 @@
 $(function(){
   $("#header").load("navbar.html"); 
   $("#footer").load("footer.html"); 
+  $("#reservation").load("reservation.html");
+ 
 });
 </script> 
 
@@ -45,7 +48,6 @@ $(function(){
 <!-- Section 2 html -->
 <section class="about-section">
     <div class="about-container">
-      <h1 class="about-subheading">ABOUT US &#127972</h1>
       <p class="about-description">
         <br>Welcome to Otto Restaurant & Lounge, where sophistication meets culinary excellence in an atmosphere of unparalleled elegance.
         Situated atop Tank Hill Road in Muyenga, Kampala, Golden Hill is more than just a restaurant – it's a destination for discerning diners seeking an extraordinary dining experience.
@@ -58,7 +60,7 @@ $(function(){
 
 <!-- scroll-triggered slide-in animation section with text-->
 <section class="story-section">
-  <div class="about-container">
+  <div class="scroll-container">
     <div class="images slide-up">
       <img src="/gallery/18.jpg" alt="Desert" class="img-back">
     </div>
@@ -76,6 +78,7 @@ $(function(){
 </section>
 
 
+
 <!-- transition for images and wording -->
 <script>
   const observer = new IntersectionObserver((entries) => {
@@ -91,6 +94,86 @@ $(function(){
   document.querySelectorAll('.slide-up').forEach(el => observer.observe(el));
 </script>
 
+
+
+<!--DIRECTION SECTION -->
+<section class="visit-section">
+  <div class="visit-container">
+    <div class="visit-text">
+      <h4 class="subheading">___RIGHT HERE WAITING______</h4>
+      <h1 class="main-heading">VISIT OUR<br>RESTAURANT</h1>
+      <p class="description">
+        We are pleased to direct you, feel free to pay us a visit.<br>
+        Tank Hill Road, Muyenga<br>
+        Mail: Auraverdeperfumes@gmail.com<br>
+        Tel: +256 787 612230
+      </p>
+      <a href="https://www.google.com/maps" target="_blank" class="btn-directions">GET DIRECTIONS</a>
+    </div>
+
+    <div class="visit-images">
+      <img src="/HomeImages/juice in a glass.jpg" alt="Juice" class="visit-img">
+    </div>
+  </div>
+</section>
+
+
+
+<!-- GALLERY GRID SECTION -->
+<div class="section-grid">
+  <div class="section-item"><img src="/gallery/19.jpg" alt="Image 1"></div>
+  <div class="section-item"><img src="/HomeImages/snack1.jpg " alt="Image 2"></div>
+  <div class="section-item"><img src="/HomeImages/pizza.jpg" alt="Image 3"></div>
+</div>
+
+
+
+<!-- THE REVIEW SECTION -->
+ <h1>
+  <section class="testimonial-section">
+  <div class="testimonial-header">
+    <h4 class="testimonial-subtitle">TESTIMONIALS</h4>
+    <h1 class="testimonial-title">WHAT PEOPLE ARE SAYING</h1>
+    <p class="testimonial-tagline">Rave Reviews from Our Esteemed Guests</p>
+  </div>
+<div class="testimonial-slider-wrapper">
+    <div class="testimonial-slider" id="testimonialSlider">
+      <!-- Repeat these .testimonial-card blocks as needed -->
+      <div class="testimonial-card">
+      <img src="/HomeImages/Hon._Lilian_Aber.png" alt="Hon Aber Lillian" class="testimonial-img">
+      <h3 class="testimonial-name">Hon Aber Lillian</h3>
+      <p class="testimonial-date">2025-02-02</p>
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">Classy and beautiful view of Kampala at night</p>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="testimonial-card">
+      <div class="testimonial-avatar">SG</div>
+      <h3 class="testimonial-name">Steve</h3>
+      <p class="testimonial-date">2024-04-02</p>
+      <div class="testimonial-stars">★★★★☆</div>
+      <p class="testimonial-text">Enjoyed the food and atmosphere. Fantastic location and made to feel welcome.</p>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="testimonial-card">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Adam Sorila" class="testimonial-img">
+      <h3 class="testimonial-name">Adam Sorila</h3>
+      <p class="testimonial-date">2024-04-02</p>
+      <div class="testimonial-stars">★★★☆☆</div>
+      <p class="testimonial-text">
+        The chicken has been raw on a few separate occasions now in the ceaser salad, with this issue happening
+        even after staff have been made aware of it means I have to edit my review to a lower score so as not to mislead
+        anyone, let’s hope they fix this soon. The wide open view is nice and the location is good. At times the food
+        has been great as well, but not consistently.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATION SECTION -->
+ <div id ='reservation'></div>
 
 
   <!-- FOOTER SECTION -->
