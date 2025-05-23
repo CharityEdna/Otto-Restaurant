@@ -1,0 +1,227 @@
+/* Gallery Hero Section */
+.gallery-hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.wording {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: gold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.wording .name {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.wording .theme {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+
+
+
+/* Section 2 CSS */
+  /* Reset default spacing */
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: white;
+      color: black;
+      overflow-x: hidden;
+    }
+
+    .about-section {
+      padding: 5rem 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .about-container {
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .about-subheading {
+      font-size: 2rem;
+      font-weight: bold;
+      color: gold;
+      letter-spacing: 1px;
+      margin-bottom: 2rem;
+    }
+
+    .about-description {
+      font-size: 1.8rem;
+      line-height: 1.7;
+      color: black;
+    }
+
+    @media (max-width: 768px) {
+      .about-description {
+        font-size: 1.4rem;
+      }
+    }
+
+
+
+
+
+    
+
+/* Image column on the right */
+.philosophy-images {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.philosophy-images img {
+  width: 100%;
+  max-height: 49%;
+  object-fit:cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Scroll-in animation */
+.slide-up {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease-out;
+}
+
+.slide-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive layout */
+@media (max-width: 100px) {
+  .philosophy-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .philosophy-images {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+}
+
+
+  
+
+
+/* scroll-triggered slide-in animation section with text */
+/* Container styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Arial', sans-serif; /* Optional for consistency */
+}
+
+
+.story-section {
+  width: 100%;
+  padding: 2rem 2rem;
+  background-color:white;
+  overflow-x: hidden;
+}
+
+.about-container {
+  display: flex;
+  align-items: stretch;
+  max-width: 3000px;
+  margin: 0 auto;
+  
+}
+
+/* Text column */
+.philosophy-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.subheading {
+  color: gold;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.subheading::after {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  background-color: gold;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+
+.main-heading {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  font-family: 'Georgia', serif;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: black;
+    text-shadow: 2px 2px 5px gold;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.btn-learn {
+  background-color: #400010;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+

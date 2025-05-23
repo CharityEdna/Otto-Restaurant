@@ -10,71 +10,91 @@
     <link rel="stylesheet" href="/CCS Files/footer.css" />
 
 
+<script src="https://code.jquery.com/jquery-3.7.1.js" 
+ integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</script>
+<script> 
+$(function(){
+  $("#header").load("navbar.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
+
 </head>
 <body>
 
+  
 <!-- NAVIGATION BAR -->
-<nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="home.html">Home</a></li>
-      <li class="dropdown">
-        <a href="#">Menu ▾</a>
-        <ul class="dropdown-content">
-            <li><a href="cafe.html">Cafe</a></li>
-          <li><a href="drinks.html">Bar & Drinks</a></li>
-          <li><a href="food.html">Food Menu</a></li>
-          <li><a href="pool.html">Pool</a></li>
-        </ul>
-      </li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<div id="header"></div>
 
 
-   <!-- FOOTER SECTION -->
- <footer class="site-footer">
-  <div class="footer-container">
-    
-    <!-- Address & Hours -->
-    <div class="footer-column">
-      <h3>Visit Us</h3>
-      <p>Golden Hill Restaurant & Lounge</p>
-      <p>Tank Hill Road, Muyenga, Kampala</p>
-
-      <h4>Working Hours</h4>
-      <p>Mon – Fri: 09:00 AM – 11:00 PM</p>
-      <p>Sat – Sun: 11:00 AM – 11:00 PM</p>
-      <p><strong>✨ Happy Hour:</strong> 12:00 AM – 5:00 PM</p>
-    </div>
-
-    <!-- Social Links -->
-    <div class="footer-column">
-      <h3>Connect With Us</h3>
-      <ul class="social-links">
-        <li><a href="mailto:goldenhill@example.com" target="_blank">📧 Gmail</a></li>
-        <li><a href="https://instagram.com/goldenhill" target="_blank">📸 Instagram</a></li>
-        <li><a href="https://wa.me/1234567890" target="_blank">💬 WhatsApp</a></li>
-      </ul>
-    </div>
-
-    <!-- Newsletter -->
-    <div class="footer-column">
-      <h3>Subscribe</h3>
-      <form class="newsletter-form">
-        <input type="email" placeholder="Enter your email" required />
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
+<!-- HERO SECTION FOR ABOUT US -->
+<div class="gallery-hero">
+  <div class="picture">
+    <img src="/HomeImages/restaurant outside.jpg" alt="Gallery Image">
   </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 Otto Restaurant & Lounge. All rights reserved.</p>
+  <div class="wording">
+    <p class="theme">______The Story Behind_____</p>
+    <h1 class="name">OUR STORY</h1>
   </div>
-</footer>
+</div>
+
+
+ 
+<!-- Section 2 html -->
+<section class="about-section">
+    <div class="about-container">
+      <h1 class="about-subheading">ABOUT US &#127972</h1>
+      <p class="about-description">
+        <br>Welcome to Otto Restaurant & Lounge, where sophistication meets culinary excellence in an atmosphere of unparalleled elegance.
+        Situated atop Tank Hill Road in Muyenga, Kampala, Golden Hill is more than just a restaurant – it's a destination for discerning diners seeking an extraordinary dining experience.
+      </p>
+    </div>
+  </section>
+
+
+
+
+<!-- scroll-triggered slide-in animation section with text-->
+<section class="story-section">
+  <div class="about-container">
+    <div class="images slide-up">
+      <img src="/gallery/18.jpg" alt="Desert" class="img-back">
+    </div>
+    <div class="text slide-up">
+      <h4 class="subheading">QUALITY & BALANCE</h4>
+      <h1 class="main-heading">OUR FOOD<br>PHILOSOPHY</h1>
+      <p class="description">
+        At Otto, food is more than just sustenance — it’s an expression of love, culture, and creativity. 
+        Join us on a culinary journey where every bite tells a story and every meal becomes a cherished memory.
+        Welcome to Otto Restaurant & Lounge, where food is a celebration of life.
+      </p>
+      <a href="http://127.0.0.1:5500/HTML%20files/gallery.html" class="btn-learn">LEARN MORE</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- transition for images and wording -->
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  document.querySelectorAll('.slide-up').forEach(el => observer.observe(el));
+</script>
+
+
+
+  <!-- FOOTER SECTION -->
+ <div id ='footer'></div>
 
 </body>
 </html>
-
