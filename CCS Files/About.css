@@ -51,14 +51,15 @@
       overflow-x: hidden;
     }
 
+    
     .about-section {
       padding: 5rem 1rem;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      background-color:gold;
-     
+      background-color:white;
+     font-family: 'Courier New', Courier;
     }
 
     .about-container {
@@ -350,11 +351,11 @@ html, body {
   flex-wrap: wrap;
 }
 .testimonial-card {
-  background: #fff;
+  background: black;
   padding: 1.5rem;
   border-radius: 10px;
-  border: 1px solid #e0e0e0;
-  width: 300px;
+  border: 1px solid gold;
+  width: 310px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   position: relative;
 }
@@ -382,6 +383,7 @@ html, body {
 .testimonial-name {
   font-weight: bold;
   margin-top: 1rem;
+  color: white;
 }
 .testimonial-date {
   font-size: 0.9rem;
@@ -394,7 +396,8 @@ html, body {
 }
 .testimonial-text {
   font-size: 0.95rem;
-  color: #444;
+  color: white;
+  
 }
 
 @keyframes scroll-left {
@@ -407,6 +410,82 @@ html, body {
 }
 
 
+
+/* VISION & MISSION section */
+ body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .vision-mission-section {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 50px 5%;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .vision-text {
+      flex: 1;
+      max-width: 50%;
+      color: #000;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .vision-text h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .vision-text p {
+      margin-bottom: 30px;
+    }
+
+    .vision-video {
+      flex: 1;
+      max-width: 45%;
+    }
+
+    .vision-video video {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* WhatsApp floating button */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .whatsapp-btn img {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .vision-mission-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+      }
+
+      .vision-text,
+      .vision-video {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .vision-text h2 {
+        text-align: center;
+      }
+    }
 
 
 

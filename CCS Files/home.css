@@ -7,18 +7,15 @@
   text-align: center;
   color: gold;
 }
-
 .hotel-name {
   font-size: 3.5rem;
   font-weight: bold;
   text-shadow: 2px 2px 5px #000;
 }
-
 .motto {
   font-size: 1.5rem;
   text-shadow: 1px 1px 3px #000;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +29,8 @@ html, body {
   
 }
 
+
+
 /* Container for background image slideshow */
 .slideshow-container {
   position: relative;
@@ -39,7 +38,6 @@ html, body {
   height: 100vh; 
   overflow: hidden;
 }
-
 /* All slides share this base styling */
 .slide {
   position: absolute;
@@ -50,16 +48,14 @@ html, body {
   opacity: 0;
   animation: fade 40s infinite; /* Total duration = 8 slides x 5s */
 }
-
-/* Updating with your real image paths */
 .slide1 { background-image: url("/HomeImages/breakfast.jpg"); animation-delay: 0s; }
 .slide2 { background-image: url("/HomeImages/pizza.jpg"); animation-delay: 5s; }
 .slide3 { background-image: url("/HomeImages/people\ dining.jpg"); animation-delay: 10s; }
 .slide4 { background-image: url("/HomeImages/restaurant.jpg"); animation-delay: 15s; }
-.slide5 { background-image: url("HomeImages/vegetables.jpg"); animation-delay: 20s; }
-.slide6 { background-image: url("/HomeImages/juice\ in\ a\ glass.jpg"); animation-delay: 25s; }
-.slide7 { background-image: url("/HomeImages/bar\ drink.jpg"); animation-delay: 30s; }
-.slide8 { background-image: url("/gallery/10.jpg"); animation-delay: 35s; }
+.slide5 { background-image: url("/HomeImages/snack1.jpg"); animation-delay: 20s; }
+.slide5 { background-image: url("/HomeImages/juice\ in\ a\ glass.jpg"); animation-delay: 25s; }
+.slide6 { background-image: url("/HomeImages/bar\ drink.jpg"); animation-delay: 30s; }
+.slide7 { background-image: url("/gallery/10.jpg"); animation-delay: 35s; }
 
 @keyframes fade {
   0%, 12.49%   { opacity: 0; }
@@ -224,10 +220,94 @@ html, body {
   flex-direction: column;
   gap: 1rem;
 }
-
 .visit-img {
   width: 100%;
   border-radius: 10px;
   object-fit: cover;
-  
 }
+
+
+
+/* MENU BUTTONS CSS */
+
+    .menu-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .menu-column {
+      flex: 1;
+      min-width: 300px;
+    }
+    .menu-heading {
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #800000;
+    }
+    .menu-title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .menu-item-title {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 16px;
+      max-width: 70%;
+    }
+    .menu-price {
+      font-weight: normal;
+      font-size: 16px;
+      white-space: nowrap;
+    }
+    .menu-description {
+      font-size: 14px;
+      color: #666;
+      margin-top: -10px;
+      margin-bottom: 15px;
+    }
+    .menu-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.menu-button {
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+.meals-button {
+  background-color: #d35400;
+}
+.meals-button:hover {
+  background-color: #a84300;
+}
+.drinks-button {
+  background-color: #2980b9;
+}
+.drinks-button:hover {
+  background-color: #1c5980;
+}
+
