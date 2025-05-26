@@ -7,74 +7,131 @@
   <link rel="icon" type="image/x-icon" href="/HomeImages/ChatGPT Image May 16, 2025, 12_08_50 PM.png">
   <link rel="stylesheet" href="/CCS Files/Contact.css" />
   <link rel="stylesheet" href="/CCS Files/navbar.css" />
-   <link rel="stylesheet" href="/CCS Files/footer.css" />
+  <link rel="stylesheet" href="/CCS Files/footer.css" />
+  <link rel="stylesheet" href="/CCS Files/reservation.css" />
 
 
+   <script src="https://code.jquery.com/jquery-3.7.1.js" 
+ integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</script>
+<script> 
+$(function(){
+  $("#header").load("navbar.html"); 
+  $("#footer").load("footer.html"); 
+  $("#reservation").load("reservation.html");
+});
+</script> 
 </head>
+
 <body>
-
-<!-- NAVIGATION BAR -->
-<nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="home.html">Home</a></li>
-      <li class="dropdown">
-        <a href="#">Menu ▾</a>
-        <ul class="dropdown-content">
-            <li><a href="cafe.html">Cafe</a></li>
-          <li><a href="drinks.html">Bar & Drinks</a></li>
-          <li><a href="food.html">Food Menu</a></li>
-          <li><a href="pool.html">Pool</a></li>
-        </ul>
-      </li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+   <!-- NAVIGATION BAR -->
+<div id="header"></div>
 
 
-<!-- FOOTER SECTION -->
- <footer class="site-footer">
-  <div class="footer-container">
-    
-    <!-- Address & Hours -->
-    <div class="footer-column">
-      <h3>Visit Us</h3>
-      <p>Golden Hill Restaurant & Lounge</p>
-      <p>Tank Hill Road, Muyenga, Kampala</p>
 
-      <h4>Working Hours</h4>
+<!-- HERO SECTION FOR CONTACT -->
+<div class="contact">
+  <div class="picture">
+    <img src="/HomeImages/wine glasses.jpg" alt="Gallery Image">
+  </div>
+  <div class="wording">
+    <h1 class="name">CONTACT US</h1>
+    <p class="theme">______Do Pay Us A visit_____</p>
+  </div>
+</div>
+
+
+
+
+<!--DIRECTION SECTION -->
+<section class="visit-section">
+  <div class="visit-container">
+    <div class="visit-text">
+      <h4 class="subheading">___OUR LOCATION______</h4>
+      <h1 class="main-heading">Where To Find US</h1>
+      <p class="description">
+        Otto Restaurant and Lounge  is located in the vibrant neighborhood of Muyenga, Kampala, atop Tank Hill Road. It offers a breathtaking retreat from the bustling city below.<br>
+        <br><b>___You Should Try Our Night View____</b><br>
+        <br>&#128205: Tank Hill Road, Muyenga<br>
+        &#128231: Auraverdeperfumes@gmail.com<br>
+        &#128383: +256 787 612230
+
+      </p>
+      <a href="https://www.google.com/maps" target="_blank" class="btn-directions">GET DIRECTIONS</a>
+    </div>
+
+    <div class="visit-images">
+      <img src="/HomeImages/nightview.jpg" alt="nightview" class="visit-img">
+    </div>
+  </div>
+</section>
+
+
+
+<!-- MESSAGE FORM-->
+<div class="contact-section">
+  <div class="contact-left">
+    <h5>GET IN TOUCH</h5>
+    <h1>CONTACT US</h1>
+    <p>
+      For general enquiries please email:<br>
+      <strong>info@ottorestaurant.com</strong><br>
+      Reserve by email: <strong>Auraverdeperfumes@gmail.com</strong><br>
+      Tel: <strong>+256 787 612230</strong>
+    </p>
+    <p><strong>Opening hours:</strong><br>
       <p>Mon – Fri: 09:00 AM – 11:00 PM</p>
       <p>Sat – Sun: 11:00 AM – 11:00 PM</p>
-      <p><strong>✨ Happy Hour:</strong> 12:00 AM – 5:00 PM</p>
-    </div>
+      <p><strong>Happy Hour:</strong> 12:00 NOON – 5:00 PM</p>
+    </p>
+  </div>
 
-    <!-- Social Links -->
-    <div class="footer-column">
-      <h3>Connect With Us</h3>
-      <ul class="social-links">
-        <li><a href="mailto:goldenhill@example.com" target="_blank">📧 Gmail</a></li>
-        <li><a href="https://instagram.com/goldenhill" target="_blank">📸 Instagram</a></li>
-        <li><a href="https://wa.me/1234567890" target="_blank">💬 WhatsApp</a></li>
-      </ul>
-    </div>
+  <div class="contact-right">
+    <form action="#" method="post">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+      </div>
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="message" placeholder="Your message (optional)"></textarea>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+</div>
 
-    <!-- Newsletter -->
-    <div class="footer-column">
-      <h3>Subscribe</h3>
+
+
+<!-- NEWSLETTER -->
+ <section class="newsletter-section">
+  <div class="overlay">
+    <div class="newsletter-content">
+      <h4>CONNECT WITH US & STAY TUNED</h4>
+      <h1>Subscribe to Our Newsletter</h1>
+      <p>
+        If you would like to stay connected and be the first to know about our news, events, and exclusive offers, 
+        please sign up for our newsletter. You can opt out at any time by clicking unsubscribe on the newsletter.
+      </p>
+
       <form class="newsletter-form">
-        <input type="email" placeholder="Enter your email" required />
-        <button type="submit">Subscribe</button>
+        <input type="email" placeholder="Your Email Address" required>
+        <div class="form-footer">
+          <label>
+            <input type="checkbox" required> I agree to the Privacy Policy
+          </label>
+          <button type="submit">&#128073</button>
+        </div>
       </form>
     </div>
   </div>
+</section>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 Otto Restaurant & Lounge. All rights reserved.</p>
-  </div>
-</footer>
 
+
+
+
+
+<!-- FOOTER SECTION -->
+ <div id ='footer'></div>
 
 
 </body>
