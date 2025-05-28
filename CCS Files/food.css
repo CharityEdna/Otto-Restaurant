@@ -1,0 +1,129 @@
+/* HERO SECTION FOR CAFE */
+body{
+    margin: 0;
+}
+.food {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.food-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+.food-word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: gold;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+.food-word .food-name {
+  font-size: 3rem;
+  margin: 0;
+  color: gold;
+}
+.food-word .food-theme {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+
+/* FOOD MENU SECTIONS  */
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      color: #8B0000;
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+    .menu-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 40px;
+      color: black;
+    }
+    .column {
+      flex: 1;
+      min-width: 45%;
+    }
+    .menu-item {
+      margin-bottom: 30px;
+    }
+    .item-title {
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .item-line {
+      flex-grow: 1;
+      height: 1px;
+      background-color: #ccc;
+      margin: 0 10px;
+    }
+    .item-desc {
+      font-size: 14px;
+      color: #555;
+      margin-top: 5px;
+    }
+    @media (max-width: 768px) {
+      .menu-container {
+        flex-direction: column;
+      }
+      .column {
+        min-width: 100%;
+      }
+    }
+
+
+
+/* MAIN COURSE MEAL AND STARTERS */
+body{
+    margin: 0;
+}
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    .menu-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .menu-item {
+      margin-bottom: 30px;
+    }
+    .menu-title {
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .menu-description {
+      font-size: 14px;
+      margin-top: 5px;
+      color: #444;
+    }
+
+    .menu-item .side-description{
+        color: red;
+    }

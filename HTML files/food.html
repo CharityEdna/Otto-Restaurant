@@ -7,6 +7,9 @@
   <link rel="icon" type="image/x-icon" href="/HomeImages/ChatGPT Image May 16, 2025, 12_08_50 PM.png">
   <link rel="stylesheet" href="/CCS Files/food.css" />
   <link rel="stylesheet" href="/CCS Files/navbar.css" />
+  <link rel="stylesheet" href="/CCS Files/footer.css" />
+  <link rel="stylesheet" href="/CCS Files/reservation.css" />
+
 
 
   
@@ -17,6 +20,7 @@
 $(function(){
   $("#header").load("navbar.html"); 
   $("#footer").load("footer.html"); 
+ $("#reservation").load("reservation.html");
 });
 </script> 
 
@@ -27,6 +31,182 @@ $(function(){
 <!-- NAVIGATION BAR -->
 <div id="header"></div>
 
+
+<!-- HERO SECTION FOR CAFE -->
+<div class="food">
+  <div class="food-picture">
+    <img src="/HomeImages/sausages.jpg" alt="picture Image">
+  </div>
+  <div class="food-word">
+    <h1 class="food-name">OTTO'S MENU</h1>
+    <p class="food-theme">________Lounge And Fine Dining________</p>
+  </div>
+</div>
+ 
+
+
+<!-- FOOD MENU SECTIONS -->
+<h3>FRESH TASTE BUDS</h3>
+  <h1>Burgers | Sandwiches | Pizzas</h1>
+
+  <div class="menu-container">
+    <!-- Left Column -->
+    <div class="column">
+      <div class="menu-item">
+        <div class="item-title">Beef Classic Burger <span class="item-line"></span> UGX 35,000/=</div>
+        <div class="item-desc">150g ground beef seasoned with house blend herbs, lettuce, tomato, romesco aioli, pickles and onions</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-title">Bacon and Cheese Burger <span class="item-line"></span> UGX 39,000/=</div>
+        <div class="item-desc">Grilled bacon burger with cheese, caramelized onions, lettuce, tomatoes and romesco aioli</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-title">Chicken Classic Burger <span class="item-line"></span> UGX 35,000/=</div>
+        <div class="item-desc">Succulent chicken breast, lettuce, tomato, onion, romesco aioli</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-title">Our Double Decker <span class="item-line"></span> UGX 39,000/=</div>
+        <div class="item-desc">Mouthwatering double chicken breast with bacon, lettuce, tomato, cucumber and romesco aioli</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-title">Vegetarianna Burger <span class="item-line"></span> UGX 32,000/=</div>
+        <div class="item-desc">Grilled bean patty, lettuce, tomato, onion and romesco aioli</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-title">Vegetarian Pizza <span class="item-line"></span> UGX 33,000/=</div>
+        <div class="item-desc">Pomodoro sauce, mozzarella cheese, roasted peppers, mushrooms, olives</div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="column">
+      <div class="menu-item">
+        <div class="item-title">Roasted Chicken Sandwich <span class="item-line"></span> UGX 35,000/=</div>
+        <div class="item-desc">Chicken breast, humus, roasted bell peppers, romesco aioli</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-title">Salmon Bagel Sandwich <span class="item-line"></span> UGX 39,000/=</div>
+        <div class="item-desc">Smoked salmon, dill, capers, cream cheese on bagel</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-title">Ham and Cheese Sandwich <span class="item-line"></span> UGX 35,000/=</div>
+        <div class="item-desc">Melted cheese and ham, tomato, romesco aioli</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-title">Classic Margherita Pizza <span class="item-line"></span> UGX 29,000/=</div>
+        <div class="item-desc">Mozzarella, pomodoro, fresh basil</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-title">Alfredo Pizza <span class="item-line"></span> UGX 35,000/=</div>
+        <div class="item-desc">Chicken, bacon, mozzarella, white sauce</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-title">Barbeque Chicken Pizza <span class="item-line"></span> UGX 37,000/=</div>
+        <div class="item-desc">Chicken, meat, mozzarella, cherry tomato, pesto, rucola</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- MAIN COURSE MEAL AND STARTERS -->
+  <h1>Starters & Main Courses</h1>
+  <div class="menu-container">
+    <!-- Left Column -->
+    <div>
+      <div class="menu-item">
+        <div class="menu-title">Mezze Mix (Egyptian Hummus) <span>UGX 29,000/=</span></div>
+        <div class="menu-description">Arabic mash chick peas dip with tahini sauce, lemon, garlic served with tabbouleh salad and pita bread.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Pork Bao <span>UGX 29,000/=</span></div>
+        <div class="menu-description">Steamed bun filled with pork stripes, roasted bell peppers and romesco aioli sauce.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Mixed Cheese Platter <span>UGX 79,000/=</span></div>
+        <div class="menu-description">Assorted cheeses with grapes, honey and crackers.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Antipasto Misto <span>UGX 79,000/=</span></div>
+        <div class="menu-description">Italian salamis, coppa, bresaola with sundried tomatoes and olives.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Beef Carpaccio <span>UGX 35,000/=</span></div>
+        <div class="menu-description">Thinly sliced raw beef with rocket leaves, parmesan, lemon and olive oil.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Classic Caesar Salad <span>UGX 36,000/=</span></div>
+        <div class="menu-description">Iceberg lettuce, garlic croutons, Caesar dressing, parmesan cheese.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Nicoise Salad <span>UGX 35,000/=</span></div>
+        <div class="menu-description">Tuna, tomatoes, capers, boiled potato, eggs with lemon dressing.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">The Greek Salad <span>UGX 35,000/=</span></div>
+        <div class="menu-description">Lettuce, cucumber, olives, tomatoes, feta cheese with vinaigrette.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Caprese <span>UGX 29,000/=</span></div>
+        <div class="menu-description">Bocconcini cheese, tomato, basil, olives and olive oil.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">SIDES <span>UGX 29,000/=</span></div>
+        <div class="side-description"> Mashed potato | Rice | Chips | Vegetable salad | | Steamed veg | Roast potato | Cips Masala</div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div>
+      <div class="menu-item">
+        <div class="menu-title">Tilapia Pepperade <span>UGX 42,000/=</span></div>
+        <div class="menu-description">Grilled Tilapia with red bell pepper coulis.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Crispy Thai Fried Whole Tilapia <span>UGX 49,000/=</span></div>
+        <div class="menu-description">Crispy Tilapia with Asian salsa.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Grilled Salmon <span>UGX 65,000/=</span></div>
+        <div class="menu-description">Grilled marinated salmon with putanesca sauce.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Garlic Mushroom Chicken <span>UGX 49,000/=</span></div>
+        <div class="menu-description">Brined chicken in mushroom sauce with vegetables.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Whole Roast Chicken <span>UGX 75,000/=</span></div>
+        <div class="menu-description">Roast chicken with lemon brine, vegetables, and accompaniments.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Half Roast Chicken <span>UGX 40,000/=</span></div>
+        <div class="menu-description">Roast half chicken with accompaniments.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Sticky Pork Ribs <span>UGX 49,000/=</span></div>
+        <div class="menu-description">Slow-cooked ribs in homemade sauce and coleslaw.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Pork Chops <span>UGX 49,000/=</span></div>
+        <div class="menu-description">Served with honey glaze or bacon & mustard sauce.</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Grilled Beef Fillet <span>UGX 59,000/= | 49,000/=</span></div>
+        <div class="menu-description">Choice of sauces: Gorgonzola (59K), Pepper (49K), Brown Mushroom (49K).</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-title">Beef Stronganoff <span>UGX 45,000/=</span></div>
+        <div class="menu-description">Beef and mushrooms in creamy paprika sauce with rice.</div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- RESERVATION SECTION-->
+<div id ='reservation'></div>
 
 
 

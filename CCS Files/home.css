@@ -223,12 +223,12 @@ html, body {
 
 
 /* MENU BUTTONS CSS */
-
     .menu-container {
       display: flex;
       justify-content: space-between;
       gap: 40px;
       flex-wrap: wrap;
+      padding: 40px;
     }
     .menu-column {
       flex: 1;
