@@ -5,14 +5,12 @@
   height: 90vh;
   overflow: hidden;
 }
-
 .picture img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: brightness(60%);
 }
-
 .wording {
   position: absolute;
   top: 50%;
@@ -22,12 +20,10 @@
   color: gold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
-
 .wording .name {
   font-size: 3rem;
   margin: 0;
 }
-
 .wording .theme {
   font-size: 1.5rem;
   margin-top: 0.5rem;
@@ -50,8 +46,6 @@
       color: black;
       overflow-x: hidden;
     }
-
-    
     .about-section {
       padding: 5rem 1rem;
       display: flex;
@@ -153,15 +147,12 @@ html, body {
   overflow-x: hidden;
   font-family: 'Arial', sans-serif; /* Optional for consistency */
 }
-
-
 .story-section {
   width: 100%;
   padding: 2rem 2rem;
   background-color:white;
   overflow-x: hidden;
 }
-
 .scroll-container {
   display: flex;
   align-items: stretch;
@@ -169,7 +160,6 @@ html, body {
   margin: 0 auto;
    background-color:white;
 }
-
 /* Text column */
 .philosophy-text {
   flex: 1;
@@ -178,7 +168,6 @@ html, body {
   justify-content: center;
   padding-right: 2rem;
 }
-
 .subheading {
   color: gold;
   font-weight: bold;
@@ -186,7 +175,6 @@ html, body {
   margin-bottom: 1rem;
   position: relative;
 }
-
 .subheading::after {
   content: "";
   display: inline-block;
@@ -196,13 +184,11 @@ html, body {
   margin-left: 1rem;
   vertical-align: middle;
 }
-
 .main-heading {
   font-size: 3rem;
   margin-bottom: 1.2rem;
   font-family: 'Georgia', serif;
 }
-
 .description {
   font-size: 1.1rem;
   color: black;
@@ -210,7 +196,6 @@ html, body {
   margin-bottom: 2rem;
   line-height: 1.6;
 }
-
 .btn-learn {
   background-color: #400010;
   color: white;
@@ -229,7 +214,6 @@ html, body {
   background-color:gold;
   font-family: 'Georgia', serif;
 }
-
 .visit-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -238,32 +222,27 @@ html, body {
   align-items: center;
   gap: 2rem;
 }
-
 .visit-text {
   flex: 1 1 50%;
   min-width: 300px;
 }
-
 .subheading {
   color: #702632;
   letter-spacing: 1px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-
 .main-heading {
   font-size: 2.8rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-
 .description {
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
   margin-bottom: 1.5rem;
 }
-
 .btn-directions {
   display: inline-block;
   padding: 12px 24px;
@@ -274,19 +253,16 @@ html, body {
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
-
 .btn-directions:hover {
   background-color: white;
   color: black;
 }
-
 .visit-images {
   flex: 1 1 40%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
 .visit-img {
   width: 100%;
   border-radius: 10px;
@@ -426,7 +402,6 @@ html, body {
       flex-wrap: wrap;
       position: relative;
     }
-
     .vision-text {
       flex: 1;
       max-width: 50%;
@@ -434,40 +409,24 @@ html, body {
       font-size: 18px;
       line-height: 1.7;
     }
-
     .vision-text h2 {
       text-align: center;
       font-size: 28px;
       margin-top: 20px;
       margin-bottom: 10px;
     }
-
     .vision-text p {
       margin-bottom: 30px;
     }
-
     .vision-video {
       flex: 1;
       max-width: 45%;
     }
-
     .vision-video video {
       width: 100%;
       border-radius: 10px;
     }
 
-    /* WhatsApp floating button */
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 100;
-    }
-
-    .whatsapp-btn img {
-      width: 60px;
-      height: 60px;
-    }
 
     @media (max-width: 768px) {
       .vision-mission-section {
@@ -475,13 +434,11 @@ html, body {
         align-items: center;
         padding: 30px 20px;
       }
-
       .vision-text,
       .vision-video {
         max-width: 100%;
         text-align: center;
       }
-
       .vision-text h2 {
         text-align: center;
       }
