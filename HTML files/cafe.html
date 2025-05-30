@@ -262,25 +262,41 @@ $(function(){
   </div>
 </section>  
 
+<script>
+  const form = document.getElementById("cakeForm");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
 
-  <script>
-    const form = document.getElementById("cakeForm");
-    form.addEventListener("submit", async function (e) {
-      e.preventDefault();
-      const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
+    // Format the message for WhatsApp and email
+    const message = `New Cake Order:\n` +
+      Object.entries(data)
+        .map(([key, value]) => `${key}: ${value}`)
+        .join("\n");
 
-      const response = await fetch('/submit-order', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
+    // Create mailto URL
+    // const email = "abercharity11@gmail.com"; 
+    // const subject = encodeURIComponent("New Cake Order");
+    // const body = encodeURIComponent(message);
+    // const mailtoUrl = `mailto:${email}?subject=${subject}&body=${body}`;
 
-      const result = await response.json();
-      document.getElementById("responseMessage").textContent = result.message;
-    });
-  </script>
+    // Open mailto link in a new tab/window
+    // window.open(mailtoUrl, '_blank');
 
+    // Proceed with WhatsApp redirect
+    const encodedMessage = encodeURIComponent(message);
+    const phoneNumber = "256787612230"; // Replace with your WhatsApp number
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+    // Redirect to WhatsApp
+    window.location.href = whatsappUrl;
+
+    // Display confirmation message
+    document.getElementById("responseMessage").textContent = 
+      "Order sent to WhatsApp and email client opened!";
+  });
+</script>
 <!-- WhatsApp Button -->
   <a class="whatsapp-btn" href="https://wa.me/256787612230" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
