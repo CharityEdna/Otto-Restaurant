@@ -25,15 +25,14 @@
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  color: white;
-}
-
-/* .nav-link.active {
+.nav-links a.active {
   color: white;
   font-weight: bold;
-  border-bottom: 2px solid white;
-} */
+  border-bottom: none;
+  text-decoration: none;
+}
+
+
 
 
 

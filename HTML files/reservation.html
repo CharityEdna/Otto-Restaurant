@@ -1,12 +1,17 @@
 <div class="reservation-section">
   <div class="overlay">
     <h2>BOOK A TABLE</h2>
-    <form class="reservation-form">
+
+   <form class="reservation-form" action="https://formspree.io/f/xqabkzwa" method="POST">
+
       <label for="name">Your Name (required)</label>
-      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+       <label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" pattern="^\+256\d{9}$|^07\d{8}$" placeholder="+256 7XXXXXXXX" required>
 
       <label for="people">Number of People</label>
-      <select id="people" required>
+      <select id="people" name="people" required>
         <option value="" disabled selected>Select number of people</option>
         <option>1 Person</option>
         <option>2 People</option>
@@ -23,10 +28,10 @@
       </select>
 
       <label for="date">Booking Date</label>
-      <input type="date" id="date" required />
+      <input type="date" id="date" name="date" required />
 
     <label for="time">Booking Time</label>
-<select id="time" required>
+<select id="time" name="time" required>
   <option value="" disabled selected>Select a time</option>
   <option>9:00 AM</option>
   <option>9:30 AM</option>
@@ -54,6 +59,15 @@
         <option>8:30 PM</option>
         <option>9:00 PM</option>
 </select>
+
+<input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+<p class="note" style="background-color: black;">
+      <br><strong>Note:</strong><br style="color: rgb(150, 11, 11);"> * We charge UGX 200,000 for 10 people and above.<br>* UGX 50,000 for less than 10 people
+    </p>
+
+<button type="submit">Reserve Now</button>
+
 
      
     </form>

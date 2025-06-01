@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Otto Restaurant & Lounge</title>
+  <link rel="icon" type="image/x-icon" href="/HomeImages/ChatGPT Image May 16, 2025, 12_08_50 PM.png">
+<link rel="stylesheet" href="/CCS Files/navbar.css" />
+
+</head>
+<body>
+
+
 <nav class="navbar">
   <ul class="nav-links">
     <li><a href="/HTML files/home.html">Home</a></li>
@@ -15,3 +29,26 @@
     <li><a href="/HTML files/Contact.html">Contact Us</a></li>
   </ul>
 </nav>
+
+
+
+
+
+<script>
+  // Only run after navbar is loaded into the page
+  $("#header").load("/HTML files/navbar.html", function () {
+    const currentPage = window.location.pathname.split("/").pop(); // get filename like 'home.html'
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      const linkPage = link.getAttribute("href").split("/").pop();
+      if (linkPage === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+
+
+</body>
+</html>

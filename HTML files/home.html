@@ -234,7 +234,17 @@ $(function(){
 <!-- FOOTER SECTION -->
  <div id ='footer'></div>
 
-   <script src="/JS Files/navbar.js"></script>
+   <script>
+  const links = document.querySelectorAll('.nav-links a');
+  const currentPage = window.location.pathname;
+
+  links.forEach(link => {
+    if (link.getAttribute('href').includes(currentPage.split("/").pop())) {
+      link.classList.add('active');
+    }
+  });
+</script>
+
 
 </body>
 </html>

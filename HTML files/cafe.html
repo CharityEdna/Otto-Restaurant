@@ -228,7 +228,8 @@ $(function(){
     <div class="order-container">
     <h1>Cake Order Form 🎂</h1>
     
-    <form id="cakeForm">
+   <form id="cakeForm">
+
       <label for="email">Your Email:</label>
       <input type="email" id="email" name="email" required>
 
@@ -246,14 +247,11 @@ $(function(){
       <label for="amount">Amount (UGX):</label>
       <input type="number" id="budget" name="budget" min="80000" placeholder="Minimum UGX 80,000" required />
 
-      <label for="transactionId">Transaction ID (to 0787612230 or 0757487200):</label>
-      <input type="text" id="transactionId" name="transactionId" required>
-
       <label for="neededDate">When do you need it?</label>
       <input type="date" id="neededDate" name="neededDate" required>
 
       <p class="note">
-      <br><strong>Note:</strong> For more inquiries for better service, we shall give you a call.
+      <br><strong>Note:</strong>Orders will be confirmed after details are finalized and a 50% deposit is received. The remaining balance is due on delivery or pickup day.
     </p>
 
       <button type="submit">Submit Cake Order</button>
@@ -307,7 +305,7 @@ $(function(){
 
     // Proceed with WhatsApp redirect
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = "256787612230"; // Replace with your WhatsApp number
+    const phoneNumber = "256787612230"; 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
     // Redirect to WhatsApp

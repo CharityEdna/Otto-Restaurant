@@ -87,7 +87,7 @@ $(function(){
   </div>
 
   <div class="contact-right">
-    <form action="#" method="post">
+    <form id="whatsapp-form">
       <div class="form-row">
         <input type="text" name="name" placeholder="Your name" required />
         <input type="email" name="email" placeholder="Your email" required />
@@ -98,6 +98,33 @@ $(function(){
     </form>
   </div>
 </div>
+
+
+<!-- JavaScript below your form  -->
+<script>
+  document.getElementById("whatsapp-form").addEventListener("submit", function (e) {
+    e.preventDefault(); 
+
+    // Get input values
+    const name = this.elements["name"].value.trim();
+    const email = this.elements["email"].value.trim();
+    const subject = this.elements["subject"].value.trim();
+    const message = this.elements["message"].value.trim();
+
+    const phone = "256787612230"; 
+
+    // Compose the message
+    const text = `Hello, I have a message from your website:%0A%0A` +
+                 `Name: ${name}%0A` +
+                 `Email: ${email}%0A` +
+                 `Subject: ${subject}%0A` +
+                 `Message: ${message || "N/A"}`;
+
+    
+    window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
+  });
+</script>
+
 
 
 
@@ -112,8 +139,9 @@ $(function(){
         please sign up for our newsletter. You can opt out at any time by clicking unsubscribe on the newsletter.
       </p>
 
-      <form class="newsletter-form">
-        <input type="email" placeholder="Your Email Address" required>
+      <form class="newsletter-form" action="https://formspree.io/f/xzzgbpwr" method="POST">
+
+        <input type="email" name="email" placeholder="Enter your email" required />
         <div class="form-footer">
           <label>
             <input type="checkbox" required> I agree to the Privacy Policy
