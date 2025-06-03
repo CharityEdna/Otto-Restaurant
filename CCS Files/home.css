@@ -46,7 +46,7 @@ html, body {
   background-size: cover;
   background-position: center;
   opacity: 0;
-  animation: fade 40s infinite; /* Total duration = 8 slides x 5s */
+  animation: fade 40s infinite;
   filter: brightness(40%);
 }
 .slide1 { background-image: url("/HomeImages/breakfast.jpg"); animation-delay: 0s; }
