@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Otto Restaurant & Lounge</title>
+      <link
+        rel="icon"
+        type="image/x-icon"
+        href="/images/Image May 16, 2025, 12_08_50 PM.png"
+      />
+      <link rel="stylesheet" href="/css/navbar.css" />
+    </head>
+    <body>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="/static/index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Menu ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="/static/cafe.html">Cafe</a></li>
+              <li><a href="/static/drinks.html">Bar & Drinks</a></li>
+              <li><a href="/static/food.html">Food Menu</a></li>
+            </ul>
+          </li>
+          <li><a href="/static/Events.html">Events</a></li>
+          <li><a href="/static/gallery.html">Gallery</a></li>
+          <li><a href="/static/About.html">About Us</a></li>
+          <li><a href="/static/Contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <script>
+        // Only run after navbar is loaded into the page
+        $("#header").load("/static/navbar.html", function () {
+          const currentPage = window.location.pathname.split("/").pop(); // get filename like 'index.html'
+
+          document.querySelectorAll(".nav-links a").forEach((link) => {
+            const linkPage = link.getAttribute("href").split("/").pop();
+            if (linkPage === currentPage) {
+              link.classList.add("active");
+            }
+          });
+        });
+      </script>
+    </body>
+  </html>
+</html>

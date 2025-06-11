@@ -49,13 +49,13 @@ html, body {
   animation: fade 40s infinite;
   filter: brightness(40%);
 }
-.slide1 { background-image: url("/HomeImages/breakfast.jpg"); animation-delay: 0s; }
-.slide2 { background-image: url("/HomeImages/pizza.jpg"); animation-delay: 5s; }
-.slide3 { background-image: url("/HomeImages/people\ dining.jpg"); animation-delay: 10s; }
-.slide4 { background-image: url("/HomeImages/restaurant.jpg"); animation-delay: 15s; }
-.slide5 { background-image: url("/HomeImages/snack1.jpg"); animation-delay: 20s; }
-.slide6 { background-image: url("/HomeImages/juice\ in\ a\ glass.jpg"); animation-delay: 25s; }
-.slide7 { background-image: url("/HomeImages/bar\ drink.jpg"); animation-delay: 30s; }
+.slide1 { background-image: url("/images/breakfast.jpg"); animation-delay: 0s; }
+.slide2 { background-image: url("/images/pizza.jpg"); animation-delay: 5s; }
+.slide3 { background-image: url("/images/people\ dining.jpg"); animation-delay: 10s; }
+.slide4 { background-image: url("/images/restaurant.jpg"); animation-delay: 15s; }
+.slide5 { background-image: url("/images/snack1.jpg"); animation-delay: 20s; }
+.slide6 { background-image: url("/images/juice\ in\ a\ glass.jpg"); animation-delay: 25s; }
+.slide7 { background-image: url("/images/bar\ drink.jpg"); animation-delay: 30s; }
 .slide8 { background-image: url("/gallery/10.jpg"); animation-delay: 35s; }
 
 @keyframes fade {
