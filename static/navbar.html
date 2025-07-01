@@ -31,19 +31,10 @@
         </ul>
       </nav>
 
-      <script>
-        // Only run after navbar is loaded into the page
-        $("#header").load("/static/navbar.html", function () {
-          const currentPage = window.location.pathname.split("/").pop(); // get filename like 'index.html'
 
-          document.querySelectorAll(".nav-links a").forEach((link) => {
-            const linkPage = link.getAttribute("href").split("/").pop();
-            if (linkPage === currentPage) {
-              link.classList.add("active");
-            }
-          });
-        });
-      </script>
-    </body>
+
+
+
+    
   </html>
 </html>

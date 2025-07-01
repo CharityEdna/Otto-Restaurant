@@ -228,16 +228,24 @@ $(function(){
  <div id ='footer'></div>
 
    <script>
-  const links = document.querySelectorAll('.nav-links a');
-  const currentPage = window.location.pathname;
+  $(function () {
+    $("#header").load("/static/navbar.html", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+      if (currentPage === "") currentPage = "index.html";
 
-  links.forEach(link => {
-    if (link.getAttribute('href').includes(currentPage.split("/").pop())) {
-      link.classList.add('active');
-    }
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        const linkPage = link.getAttribute("href").split("/").pop();
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    });
+
+    $("#footer").load("footer.html");
+    $("#reservation").load("reservation.html");
   });
 </script>
-
 
 
 
